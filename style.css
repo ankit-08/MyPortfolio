@@ -128,8 +128,6 @@ section .title::after {
   transition: color 0.3s ease;
 }
 .navbar .menu li a:hover {
-  
-  
   border-bottom: 2px solid #def2f1;
 }
 .navbar.sticky .menu li a:hover {
