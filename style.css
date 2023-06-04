@@ -37,6 +37,7 @@ section {
   margin: auto;
 }
 .about,
+.educations,
 .Projects,
 .skills,
 .teams,
@@ -46,6 +47,7 @@ footer {
 }
 .about .about-content,
 .Projects .serv-content,
+.educations .serv-content,
 .skills .skills-content,
 .contact .contact-content {
   display: flex;
@@ -217,9 +219,9 @@ section .title::after {
   border: 2px solid #17252A;
   transition: all 0.3s ease;
 }
-.home .home-content a:hover {
+.home .home-content a:hover{
   color: #17252A;
-  background: none;
+  background: white;
 }
 
 /* about section styling */
@@ -267,22 +269,26 @@ section .title::after {
   background: none;
 }
 
-/* Projects section styling */
-.Projects,
+/* Projects section and Education section styling */
+.Projects,.educations,
 .teams {
   color: #fff;
   background: #111;
 }
 .Projects .title::before,
-.teams .title::before {
+.teams .title::before,
+.educations .title::before
+ {
   background: #fff;
 }
 .Projects .title::after,
-.teams .title::after {
+.teams .title::after
+.educations .title::after {
   background: #111;
   content: "what can i do";
 }
-.Projects .serv-content .card {
+.Projects .serv-content .card,
+.educations .serv-content .card {
   width: calc(33% - 20px);
   background: #222;
   text-align: center;
@@ -299,24 +305,57 @@ text-align: justify;
   cursor: pointer;
   }
 
-.Projects .serv-content .card .box {
+.Projects .serv-content .card .box,
+.educations .serv-content .card .box{
   transition: all 0.3s ease;
 }
-.Projects .serv-content .card:hover .box {
+.Projects .serv-content .card:hover .box,
+.educations .serv-content .card:hover .box {
   transform: scale(1.05);
 }
-.Projects .serv-content .card i {
+.Projects .serv-content .card i
+.educations .serv-content .card i {
   font-size: 50px;
   color: #0396A6;
   transition: color 0.3s ease;
 }
-.Projects .serv-content .card:hover i {
+.Projects .serv-content .card:hover i,
+.educations .serv-content .card:hover i  {
   color: #fff;
 }
-.Projects .serv-content .card .text {
+.Projects .serv-content .card .text,
+.educations .serv-content .card .text {
   font-size: 25px;
   font-weight: 500;
   margin: 10px 0 7px 0;
+}
+
+/* Only Education section styling */
+
+.educations ul li{
+  text-align: start;
+}
+.educations .serv-content .card .box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.educations .serv-content .card .box a{
+  display: inline-block;
+  background: #222;
+  color: #fff;
+  font-size: 20px;
+  padding: 10px 20px;
+  margin-top: 20px;
+  font-weight: 400;
+  border-radius: 6px;
+  border: 2px solid #DDE8F0;
+  transition: all 0.3s ease;
+}
+.educations .serv-content .card .box a:hover {
+  color: #111;
+  background: #DDE8F0;
 }
 
 /* skills section styling */
@@ -634,7 +673,7 @@ footer span a:hover {
   .about .about-content .right {
     flex: 100%;
   }
-  .Projects .serv-content .card {
+  .Projects .serv-content .card,.educations .serv-content .card {
     width: calc(50% - 10px);
     margin-bottom: 20px;
   }
@@ -658,7 +697,7 @@ footer span a:hover {
   .home .home-content a {
     font-size: 20px;
   }
-  .Projects .serv-content .card {
+  .Projects .serv-content .card,.educations .serv-content .card {
     width: 100%;
   }
 }
