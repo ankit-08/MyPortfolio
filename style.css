@@ -436,6 +436,7 @@ text-align: justify;
 /* teams section styling */
 .teams .title::after {
   content: "who with me";
+  background-color: #111;
 }
 .teams .carousel .card {
   background: #17252A;
