@@ -16,9 +16,11 @@ html {
 ::-webkit-scrollbar {
   width: 10px;
 }
+
 ::-webkit-scrollbar-track {
   background: #f1f1f1;
 }
+
 ::-webkit-scrollbar-thumb {
   background: #888;
 }
@@ -31,28 +33,36 @@ html {
 section {
   padding: 100px 0;
 }
+
 .max-width {
   max-width: 1300px;
   padding: 0 80px;
   margin: auto;
 }
+
 .about,
-.Projects,
+.educations,
 .skills,
+.Projects,
+.internships,
 .teams,
 .contact,
 footer {
   font-family: "Poppins", sans-serif;
 }
+
 .about .about-content,
 .Projects .serv-content,
+.educations .serv-content,
 .skills .skills-content,
+.internships .internships-content,
 .contact .contact-content {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
 }
+
 section .title {
   position: relative;
   text-align: center;
@@ -62,6 +72,7 @@ section .title {
   padding-bottom: 20px;
   font-family: "Ubuntu", sans-serif;
 }
+
 section .title::before {
   content: "";
   position: absolute;
@@ -72,6 +83,7 @@ section .title::before {
   background: #111;
   transform: translateX(-50%);
 }
+
 section .title::after {
   position: absolute;
   bottom: -8px;
@@ -92,31 +104,38 @@ section .title::after {
   font-family: "Ubuntu", sans-serif;
   transition: all 0.3s ease;
 }
+
 .navbar.sticky {
   padding: 15px 0;
   background: rgba(0, 0, 0, 0.4);
 }
+
 .navbar .max-width {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
 .navbar .logo a {
   color: #fff;
   font-size: 35px;
   font-weight: 600;
 }
+
 .navbar .logo a span {
   color: #97CBDC;
   transition: all 0.3s ease;
 }
+
 .navbar.sticky .logo a span {
   color: #fff;
 }
+
 .navbar .menu li {
   list-style: none;
   display: inline-block;
 }
+
 .navbar .menu li a {
   display: block;
   color: #fff;
@@ -127,9 +146,11 @@ section .title::after {
   margin-left: 25px;
   transition: color 0.3s ease;
 }
+
 .navbar .menu li a:hover {
   border-bottom: 2px solid #def2f1;
 }
+
 .navbar.sticky .menu li a:hover {
   color: #fff;
 }
@@ -141,6 +162,7 @@ section .title::after {
   cursor: pointer;
   display: none;
 }
+
 .scroll-up-btn {
   position: fixed;
   height: 45px;
@@ -160,11 +182,13 @@ section .title::after {
   pointer-events: none;
   transition: all 0.3s ease;
 }
+
 .scroll-up-btn.show {
   bottom: 30px;
   opacity: 1;
   pointer-events: auto;
 }
+
 .scroll-up-btn:hover {
   filter: brightness(90%);
 }
@@ -180,16 +204,20 @@ section .title::after {
   background-attachment: fixed;
   font-family: "Ubuntu", sans-serif;
 }
+
 .home .max-width {
   width: 100%;
   display: flex;
 }
+
 .home .max-width .row {
   margin-right: 0;
 }
+
 .home .home-content .text-1 {
   font-size: 27px;
 }
+
 .home .home-content .text-2 {
   font-family: Georgia, 'Times New Roman', Times, serif;
   color: #DDE8F0;
@@ -197,14 +225,17 @@ section .title::after {
   font-weight: 600;
   margin-left: -3px;
 }
+
 .home .home-content .text-3 {
   font-size: 40px;
   margin: 5px 0;
 }
+
 .home .home-content .text-3 span {
   color: #17252A;
   font-weight: 500;
 }
+
 .home .home-content a {
   display: inline-block;
   background: #17252A;
@@ -217,18 +248,21 @@ section .title::after {
   border: 2px solid #17252A;
   transition: all 0.3s ease;
 }
+
 .home .home-content a:hover {
   color: #17252A;
-  background: none;
+  background: white;
 }
 
 /* about section styling */
 .about .title::after {
   content: "who i am";
 }
+
 .about .about-content .left {
   width: 45%;
 }
+
 .about .about-content .left img {
   height: 400px;
   width: 400px;
@@ -236,20 +270,25 @@ section .title::after {
   border-radius: 200px;
   border: 5px solid #0396A6;
 }
+
 .about .about-content .right {
   width: 55%;
 }
+
 .about .about-content .right .text {
   font-size: 25px;
   font-weight: 600;
   margin-bottom: 10px;
 }
+
 .about .about-content .right .text span {
   color: #0396A6;
 }
+
 .about .about-content .right p {
   text-align: justify;
 }
+
 .about .about-content .right a {
   display: inline-block;
   background: #0396A6;
@@ -262,61 +301,119 @@ section .title::after {
   border: 2px solid #0396A6;
   transition: all 0.3s ease;
 }
+
 .about .about-content .right a:hover {
   color: #0396A6;
   background: none;
 }
 
-/* Projects section styling */
+/* Projects section and Education section styling */
 .Projects,
+.educations,
 .teams {
   color: #fff;
   background: #111;
 }
+
 .Projects .title::before,
-.teams .title::before {
+.teams .title::before,
+.educations .title::before {
   background: #fff;
 }
+
 .Projects .title::after,
-.teams .title::after {
+.teams .title::after .educations .title::after {
   background: #111;
   content: "what can i do";
 }
-.Projects .serv-content .card {
+
+.Projects .serv-content .card,
+.educations .serv-content .card {
   width: calc(33% - 20px);
   background: #222;
   text-align: center;
   border-radius: 6px;
   padding: 50px 25px;
-  
+
   transition: all 0.3s ease;
 }
-.Projects .serv-content .card p{
-text-align: justify;
+
+.Projects .serv-content .card p {
+  text-align: justify;
 }
-.Projects .serv-content .card p a{
+
+.Projects .serv-content .card p a {
   color: #0396A6;
   cursor: pointer;
-  }
+}
 
-.Projects .serv-content .card .box {
+.Projects .serv-content .card .box,
+.educations .serv-content .card .box {
   transition: all 0.3s ease;
 }
-.Projects .serv-content .card:hover .box {
+
+.Projects .serv-content .card:hover .box,
+.educations .serv-content .card:hover .box {
   transform: scale(1.05);
 }
-.Projects .serv-content .card i {
+
+.Projects .serv-content .card i .educations .serv-content .card i {
   font-size: 50px;
   color: #0396A6;
   transition: color 0.3s ease;
 }
-.Projects .serv-content .card:hover i {
+
+.Projects .serv-content .card:hover i,
+.educations .serv-content .card:hover i {
   color: #fff;
 }
-.Projects .serv-content .card .text {
+
+.Projects .serv-content .card .text,
+.educations .serv-content .card .text {
   font-size: 25px;
   font-weight: 500;
   margin: 10px 0 7px 0;
+}
+
+.Projects .title::after {
+  background-color: #111;
+  content: "what can i do";
+}
+
+/* Only Education section styling */
+
+.educations ul li {
+  text-align: start;
+}
+
+.educations .serv-content .card .box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.educations .serv-content .card .box a {
+  display: inline-block;
+  background: #222;
+  color: #fff;
+  font-size: 20px;
+  padding: 10px 20px;
+  margin-top: 20px;
+  font-weight: 400;
+  border-radius: 6px;
+  border: 2px solid #DDE8F0;
+  transition: all 0.3s ease;
+}
+
+.educations .serv-content .card .box a:hover {
+  color: #111;
+  background: #DDE8F0;
+}
+
+.educations .title::after {
+  background-color: #111;
+  content: "i have secured";
 }
 
 /* skills section styling */
@@ -324,17 +421,28 @@ text-align: justify;
 .skills .title::after {
   content: "what i know";
 }
-.skills .skills-content .column {
+.internships .title::after {
+  content: "where i worked";
+}
+
+
+.skills .skills-content .column,
+.internships .internships-content .column  {
   width: calc(50% - 30px);
 }
-.skills .skills-content .left .text {
+
+.skills .skills-content .left .text,
+.internships .internships-content .left .text {
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 10px;
 }
-.skills .skills-content .left p {
+
+.skills .skills-content .left p,
+.internships .internships-content .left p {
   text-align: justify;
 }
+
 .skills .skills-content .left a {
   display: inline-block;
   background: #0396A6;
@@ -347,29 +455,35 @@ text-align: justify;
   border: 2px solid #0396A6;
   transition: all 0.3s ease;
 }
+
 .skills .skills-content .left a:hover {
   color: #0396A6;
   background: none;
 }
+
 .skills .skills-content .right .bars {
   margin-bottom: 15px;
 }
+
 .skills .skills-content .right .info {
   display: flex;
   margin-bottom: 5px;
   align-items: center;
   justify-content: space-between;
 }
+
 .skills .skills-content .right span {
   font-weight: 500;
   font-size: 18px;
 }
+
 .skills .skills-content .right .line {
   height: 5px;
   width: 100%;
   background: lightgrey;
   position: relative;
 }
+
 .skills .skills-content .right .line::before {
   content: "";
   position: absolute;
@@ -378,26 +492,42 @@ text-align: justify;
   top: 0;
   background: #0396A6;
 }
+
 .skills-content .right .html::before {
   width: 95%;
 }
+
 .skills-content .right .css::before {
   width: 80%;
 }
+
 .skills-content .right .js::before {
   width: 20%;
 }
+
 .skills-content .right .java::before {
   width: 70%;
 }
+
 .skills-content .right .sql::before {
   width: 70%;
 }
+
+
+.internships .internships-content .right img {
+  height: 80%;
+  width: 50%;
+  object-fit: cover;
+  margin-left: 150px;
+  border: 3px solid #000000;
+}
+
 
 /* teams section styling */
 .teams .title::after {
   content: "who with me";
 }
+
 .teams .carousel .card {
   background: #17252A;
   border-radius: 6px;
@@ -406,9 +536,11 @@ text-align: justify;
   overflow: hidden;
   transition: all 0.3s ease;
 }
+
 .teams .carousel .card:hover {
   background: #0396A6;
 }
+
 .teams .carousel .card .box {
   display: flex;
   flex-direction: column;
@@ -416,14 +548,17 @@ text-align: justify;
   justify-content: center;
   transition: all 0.3s ease;
 }
+
 .teams .carousel .card:hover .box {
   transform: scale(1.05);
 }
+
 .teams .carousel .card .text {
   font-size: 25px;
   font-weight: 500;
   margin: 10px 0 7px 0;
 }
+
 .teams .carousel .card img {
   height: 150px;
   width: 150px;
@@ -432,13 +567,16 @@ text-align: justify;
   border: 5px solid #0396A6;
   transition: all 0.3s ease;
 }
+
 .teams .carousel .card:hover img {
   border-color: #fff;
 }
+
 .owl-dots {
   text-align: center;
   margin-top: 20px;
 }
+
 .owl-dot {
   height: 13px;
   width: 13px;
@@ -448,10 +586,12 @@ text-align: justify;
   border: 2px solid #0396A6 !important;
   transition: all 0.3s ease;
 }
+
 .owl-dot.active {
   width: 35px;
   border-radius: 14px;
 }
+
 .owl-dot.active,
 .owl-dot:hover {
   background: #0396A6 !important;
@@ -461,54 +601,68 @@ text-align: justify;
 .contact .title::after {
   content: "get in touch";
 }
+
 .contact .contact-content .column {
   width: calc(50% - 30px);
 }
+
 .contact .contact-content .text {
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 10px;
 }
+
 .contact .contact-content .left p {
   text-align: justify;
 }
+
 .contact .contact-content .left .icons {
   margin: 10px 0;
 }
+
 .contact .contact-content .row {
   display: flex;
   height: 65px;
   align-items: center;
 }
+
 .contact .contact-content .row .info {
   margin-left: 30px;
 }
+
 .contact .contact-content .row i {
   font-size: 25px;
   color: #0396A6;
 }
+
 .contact .contact-content .info .head {
   font-weight: 500;
 }
+
 .contact .contact-content .info .sub-title {
   color: #333;
 }
+
 .contact .right form .fields {
   display: flex;
 }
+
 .contact .right form .field,
 .contact .right form .fields .field {
   height: 45px;
   width: 100%;
   margin-bottom: 15px;
 }
+
 .contact .right form .textarea {
   height: 80px;
   width: 100%;
 }
+
 .contact .right form .name {
   margin-right: 10px;
 }
+
 .contact .right form .field input,
 .contact .right form .textarea textarea {
   height: 100%;
@@ -521,18 +675,22 @@ text-align: justify;
   font-family: "Poppins", sans-serif;
   transition: all 0.3s ease;
 }
+
 .contact .right form .field input:focus,
 .contact .right form .textarea textarea:focus {
   border-color: #b3b3b3;
 }
+
 .contact .right form .textarea textarea {
   padding-top: 10px;
   resize: none;
 }
+
 .contact .right form .button-area {
   display: flex;
   align-items: center;
 }
+
 .right form .button-area button {
   color: #fff;
   display: block;
@@ -548,10 +706,12 @@ text-align: justify;
   border: 2px solid #0396A6;
   transition: all 0.3s ease;
 }
+
 .right form .button-area button:hover {
   color: #0396A6;
   background: none;
 }
+
 /* footer section styling */
 footer {
   background: #17252A;
@@ -559,10 +719,12 @@ footer {
   color: #fff;
   text-align: center;
 }
+
 footer span a {
   color: #0396A6;
   text-decoration: none;
 }
+
 footer span a:hover {
   text-decoration: underline;
 }
@@ -580,14 +742,17 @@ footer span a:hover {
     padding: 0 50px;
   }
 }
+
 @media (max-width: 947px) {
   .menu-btn {
     display: block;
     z-index: 999;
   }
+
   .menu-btn i.active:before {
     content: "\f00d";
   }
+
   .navbar .menu {
     position: fixed;
     height: 100vh;
@@ -599,46 +764,60 @@ footer span a:hover {
     padding-top: 80px;
     transition: all 0.3s ease;
   }
+
   .navbar .menu.active {
     left: 0;
   }
+
   .navbar .menu li {
     display: block;
   }
+
   .navbar .menu li a {
     display: inline-block;
     margin: 20px 0;
     font-size: 25px;
   }
+
   .home .home-content .text-2 {
     font-size: 70px;
   }
+
   .home .home-content .text-3 {
     font-size: 35px;
   }
+
   .home .home-content a {
     font-size: 23px;
     padding: 10px 30px;
   }
+
   .max-width {
     max-width: 930px;
   }
+
   .about .about-content .column {
     width: 100%;
   }
+
   .about .about-content .left {
     display: flex;
     justify-content: center;
     margin: 0 auto 60px;
   }
+
   .about .about-content .right {
     flex: 100%;
   }
-  .Projects .serv-content .card {
+
+  .Projects .serv-content .card,
+  .educations .serv-content .card {
     width: calc(50% - 10px);
     margin-bottom: 20px;
   }
+
   .skills .skills-content .column,
+  .internships .internships-content .column,
   .contact .contact-content .column {
     width: 100%;
     margin-bottom: 35px;
@@ -649,45 +828,67 @@ footer span a:hover {
   .max-width {
     padding: 0 23px;
   }
+
   .home .home-content .text-2 {
     font-size: 60px;
   }
+
   .home .home-content .text-3 {
     font-size: 32px;
   }
+
   .home .home-content a {
     font-size: 20px;
   }
-  .Projects .serv-content .card {
+
+  .Projects .serv-content .card,
+  .educations .serv-content .card {
     width: 100%;
   }
+
+  .internships .internships-content .right img {
+    margin: 0 25%;
+  }
+  
 }
 
 @media (max-width: 500px) {
   .home .home-content .text-2 {
     font-size: 50px;
   }
+
   .home .home-content .text-3 {
     font-size: 27px;
   }
+  .internships .internships-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
   .about .about-content .right .text,
-  .skills .skills-content .left .text {
+  .skills .skills-content .left .text,
+  .internships .internships-content .left .text {
     font-size: 19px;
   }
+
   .contact .right form .fields {
     flex-direction: column;
   }
+
   .contact .right form .name,
   .contact .right form .email {
     margin: 0;
   }
+
   .right form .error-box {
     width: 150px;
   }
+
   .scroll-up-btn {
     right: 15px;
     bottom: 15px;
-    height: 38px;
+    height: 35px;
     width: 35px;
     font-size: 23px;
     line-height: 38px;
