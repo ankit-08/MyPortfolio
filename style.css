@@ -144,7 +144,7 @@ section .title::after {
   font-size: 19px;
   font-weight: 500;
   margin-left: 25px;
-
+  border-bottom: 2px solid transparent;
 
 }
 
@@ -324,7 +324,7 @@ section .title::after {
 }
 
 .Projects .title::after,
-.certificates .title::after .educations .title::after {
+.certificates .title::after, .educations .title::after {
   background: #111;
 
 }
