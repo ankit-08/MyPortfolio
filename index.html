@@ -12,6 +12,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
 </head>
@@ -30,7 +33,7 @@
                 <li><a href="#skills" class="menu-btn">Skills</a></li>
                 <li><a href="#Projects" class="menu-btn">Projects</a></li>
                 <li><a href="#internships" class="menu-btn">Internships</a></li>
-                <!-- <li><a href="#teams" class="menu-btn">Teams</a></li> -->
+                <li><a href="#certificates" class="menu-btn">Certificates</a></li>
                 <li><a href="#contact" class="menu-btn">Contact</a></li>
             </ul>
             <div class="menu-btn">
@@ -240,91 +243,42 @@
     
         
 
-    <!-- teams section start -->
-    <section class="teams" id="teams">
+    <!-- certificates section start -->
+    <section class="certificates" id="certificates">
         <div class="max-width">
-            <h2 class="title">My teams</h2>
+            <h2 class="title">My Certificates</h2>
+            <div class="full-img" id="fullImgBox">
+                <img src="./images/JAVA(Basic).png" id="fullImg">
+                <span onclick="closeFullImg()" title="close"><i class="fa-regular fa-circle-xmark"></i></span>
+            </div>
             <div class="carousel owl-carousel">
                 <div class="card">
-                    <div class="box">
-                        <img src="images/profile-1.jpeg" alt="">
-                        <div class="text">Someone name</div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
+                    <img src="./images/JAVA(Basic).png" onclick="openFullImg(this.src)" title="click to make it large">
+                    
                 </div>
                 <div class="card">
-                    <div class="box">
-                        <img src="images/profile-2.jpeg" alt="">
-                        <div class="text">Someone name</div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
+                    <img src="./images/sql_basic certificate1.jpg" onclick="openFullImg(this.src)"
+                        title="click to make it large">
                 </div>
                 <div class="card">
-                    <div class="box">
-                        <img src="images/profile-3.jpeg" alt="">
-                        <div class="text">Someone name</div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
+                    <img src="./images/Google cloud days.jpg" onclick="openFullImg(this.src)"
+                        title="click to make it large">
                 </div>
                 <div class="card">
-                    <div class="box">
-                        <img src="images/profile-4.jpeg" alt="">
-                        <div class="text">Someone name</div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
+                    <img src="./images/EAZY BTECH_page-0001.jpg" onclick="openFullImg(this.src)"
+                        title="click to make it large">
                 </div>
                 <div class="card">
-                    <div class="box">
-                        <img src="images/profile-5.jpeg" alt="">
-                        <div class="text">Someone name</div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <img src="images/profile-5.jpeg" alt="">
-                        <div class="text">Someone name</div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <img src="images/profile-5.jpeg" alt="">
-                        <div class="text">Someone name</div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <img src="images/profile-5.jpeg" alt="">
-                        <div class="text">Someone name</div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <img src="images/profile-5.jpeg" alt="">
-                        <div class="text">Someone name</div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <img src="images/profile-5.jpeg" alt="">
-                        <div class="text">Someone name</div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <img src="images/profile-5.jpeg" alt="">
-                        <div class="text">Someone name</div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-                </div>
+                    <img src="./images/HTML Certificate_page-0001.jpg" onclick="openFullImg(this.src)"
+                        title="click to make it large">
 
+                </div>
+                <div class="card">
+                    <img src="./images/Hack 4 Fun_page-0001.jpg" onclick="openFullImg(this.src)"
+                        title="click to make it large">
+
+                </div>
             </div>
-        </div>
     </section>
 
     <!-- contact section start -->
